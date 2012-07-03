@@ -30,3 +30,12 @@ group :stylesheets do
 
   guard 'sass', :input => "#{PATHS[:in]}/stylesheets", :output => "#{PATHS[:out]}/stylesheets"
 end
+
+# -= Livereload =-
+group :reload do
+  guard 'livereload' do
+    watch(%r{#{PATHS[:out]}/.+\.html$})
+    watch(%r{#{PATHS[:out]}/stylesheets/.+\.css$})
+    watch(%r{#{PATHS[:out]}/javascripts/.+\.js$})
+  end
+end

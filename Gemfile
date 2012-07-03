@@ -3,21 +3,7 @@ source 'http://rubygems.org'
 # Guard
 gem 'guard'
 
-# Template preprocessors
-gem 'guard-haml'
-
-# Javascript preprocessors
-gem 'guard-coffeescript'
-
-# Stylesheets preprocessors
-gem 'guard-sass'
-gem 'guard-less'
-
-source 'http://rubygems.org'
-
-# Guard
-gem 'guard'
-
+# -= Preprocessors =-
 
 # Template preprocessors
 gem 'guard-haml'
@@ -28,6 +14,12 @@ gem 'guard-coffeescript'
 # Stylesheets preprocessors
 gem 'guard-sass'
 gem 'guard-less'
+
+# -= Liverreload =-
+
+# Install browser extension to use this gem  http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-
+# Safari, Chrome, Firefox only
+gem 'guard-livereload'
 
 # -= Guard notifiers =-
 
