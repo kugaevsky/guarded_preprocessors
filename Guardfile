@@ -1,6 +1,14 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
+# -= Guard notifications =-
+
+# notification :growl
+# notification :libnotify, :timeout => 5, :transient => true, :append => false, :urgency => :critical
+# notification :notifu, :time => 5, :nosound => true, :xp => true
+
+# -= Guard preprocessors =-
+
 group :templates do
   guard 'haml', :input => 'source', :output => 'html' do
     watch(/^.+(\.html\.haml)/)
