@@ -6,7 +6,7 @@ Simple bundle to mock up web frontends with HAML/Coffee/Sass/Less
 
 __Environment:__ You must have installed `ruby` with `bundler` gem in your environment to use guarded_preprocessors.
 
-1. `git clone git://github.com/kugaevsky/guarded_preprocessors.git` -- сlone (or download) repository to your machine
+1. `git clone git://github.com/kugaevsky/guarded_preprocessors.git` – сlone (or download) repository to your machine
 2. `cd guarded_preprocessors` change your working directory.
 3. Uncomment notification gems that you really need in `Gemfile`.
 4. Run `bundle install` to install all dependencies.
@@ -22,8 +22,8 @@ All of them will be automagically compile in `html` directory of your project.
 * `source/` - directory for source files written in HAML/Coffee/Sass/Less
 * `html/` - directory for compiled files in HTML/Javascript/CSS
 
-Anyway, your can edit relative paths for each preprocessor in your `Guardfile`. Syntax is really very simple. Just redefine paths hash  .
-
+Anyway, your can edit relative paths for each preprocessor in your `Guardfile`. Syntax is really very simple. 
+Just redefine paths hash.
 `PATHS = { :in => 'source', :out => 'html' }`
 
 ## Preprocessors
