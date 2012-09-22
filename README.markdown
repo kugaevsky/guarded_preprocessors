@@ -1,4 +1,4 @@
-# Guarded preprocessors
+# Guarded preprocessors     [![endorse](http://api.coderwall.com/kugaevsky/endorsecount.png)](http://coderwall.com/kugaevsky)
 
 Simple bundle to mock up web frontends with HAML/Coffee/Sass/Less.
 Autocompiles your files on every save and refreshes browser without `⌘+R` or `F5`
