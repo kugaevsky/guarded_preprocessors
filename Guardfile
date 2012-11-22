@@ -15,7 +15,7 @@ PATHS = { :in => 'source', :out => 'html' }
 
 group :templates do
   guard 'haml', :input => PATHS[:in], :output => PATHS[:out] do
-    watch(/^.+(\.html\.haml)/)
+    watch(%r{#{PATHS[:in]}/.+(\.html\.haml)$})
   end
 end
 
