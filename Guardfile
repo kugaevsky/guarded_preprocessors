@@ -14,8 +14,19 @@ PATHS = { :in => 'source', :out => 'html' }
 # -= Guard preprocessors =-
 
 group :templates do
+
+  # Sample guardfile block for Guard::Haml
+  # You can use some options to change guard-haml configuration
+  # :run_at_start => true                 compile files when guard starts
+  # :notifications => true                send notifictions to Growl/libnotify/Notifu
+  # :haml_options => { :ugly => true }    pass options to the Haml engine
+
   guard 'haml', :input => PATHS[:in], :output => PATHS[:out] do
     watch(/^.+(\.html\.haml)/)
+  end
+
+  guard 'slim', :input_root => PATHS[:in], :output_root => PATHS[:out], :slim => { :pretty => true } do
+    watch(%r'^.+\.slim$')
   end
 end
 

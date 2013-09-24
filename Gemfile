@@ -1,27 +1,41 @@
 source 'http://rubygems.org'
 
+#---------
 # Guard
+#---------
 gem 'guard'
 
-# -= Preprocessors =-
+#-----------------
+# Preprocessors
+#-----------------
 
+#------------------------
 # Template preprocessors
+#------------------------
 gem 'guard-haml', github: 'kugaevsky/guard-haml'
+gem 'guard-slim'
 
+#--------------------------
 # Javascript preprocessors
+#--------------------------
 gem 'guard-coffeescript'
 
+#---------------------------
 # Stylesheets preprocessors
+#---------------------------
 gem 'guard-sass'
 gem 'guard-less'
 
-# -= Liverreload =-
-
+#----------------
+# Liverreload
+#----------------
 # Install browser extension to use this gem  http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-
 # Safari, Chrome, Firefox only
 gem 'guard-livereload'
 
-# -= Guard notifiers =-
+#-------------------
+# Guard notifiers
+#-------------------
 
 # MacOS users: Growl notifications
 # Please install first growlnotify library - http://growl.info/extras.php#growlnotify
