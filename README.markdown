@@ -67,3 +67,7 @@ To all guys that make frontend development faster and cleaner
 * [Sass](http://sass-lang.com/)
 * [LESS](http://lesscss.org/)
 * [LiveReload](http://livereload.com/)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kugaevsky/guarded_preprocessors/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
