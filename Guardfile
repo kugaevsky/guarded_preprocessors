@@ -22,7 +22,7 @@ group :templates do
   # :haml_options => { :ugly => true }    pass options to the Haml engine
 
   guard 'haml', :input => PATHS[:in], :output => PATHS[:out] do
-    watch(/^.+(\.html\.haml)/)
+    watch(%r{#{PATHS[:in]}/.+(\.html\.haml)$})
   end
 
   guard 'slim', :input_root => PATHS[:in], :output_root => PATHS[:out], :slim => { :pretty => true } do
